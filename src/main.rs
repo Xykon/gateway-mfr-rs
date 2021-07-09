@@ -6,7 +6,7 @@ use structopt::StructOpt;
 #[structopt(name = env!("CARGO_BIN_NAME"), version = env!("CARGO_PKG_VERSION"), about = "Gateway Manufacturing ")]
 pub struct Cli {
     /// The i2c device path
-    #[structopt(long, default_value = "/dev/i2c-1")]
+    #[structopt(long, default_value = "/dev/i2c-10")]
     path: PathBuf,
 
     /// The bus address
